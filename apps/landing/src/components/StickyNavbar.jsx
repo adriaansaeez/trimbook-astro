@@ -32,10 +32,10 @@ export default function StickyNavbar({ children }) {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="/login" className="text-sm font-medium text-gray-800 hover:text-blue-500">
+            <a href="" className="text-sm font-medium text-gray-800 hover:text-blue-500">
               Iniciar sesión / <span className="font-semibold">Registrarse</span>
             </a>
-            <button className="inline-flex items-center gap-1 px-4 py-1.5 text-sm text-white border border-gray-300 rounded bg-orange-400 hover:bg-orange-600 transition">
+            <button disabled className="inline-flex items-center gap-1 px-4 py-1.5 text-sm text-white border border-gray-300 rounded bg-orange-400 hover:bg-orange-600 transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1.5m0 15V21m9-9h-1.5M3 12H1.5m16.95-6.45L17.1 7.1m-10.2 10.2-1.35 1.35m12.75 0-1.35-1.35M6.9 6.9 5.55 5.55" />
               </svg>
