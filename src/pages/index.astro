@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Funcionalidades from '../components/Funcionalidades.astro';
+import HeroDos from '../components/HeroDos.astro';
+import ComoFunciona from '../components/ComoFunciona.astro';
+import Testimonio from '../components/Testimonio.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrimBook</title>
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+  </head>
+  <body class="bg-[#FDFDFC] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
+    <Header />
+    <main class="bg-white text-[#1b1b18] w-full">
+      <Hero />
+      <Funcionalidades />
+      <HeroDos />
+      <ComoFunciona />
+      <Testimonio />
+      <Footer />
+    </main>
+  </body>
+</html>

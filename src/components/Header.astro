@@ -1,0 +1,30 @@
+---
+// src/components/Header.astro
+import StickyNavbar from './StickyNavbar.jsx';
+---
+
+<StickyNavbar client:load>
+  <header class="bg-white shadow border-b">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img src="/images/trimbook-logo-light-removebg.png" alt="TrimBook Logo" class="h-10" />
+      </a>
+
+      <!-- Acciones -->
+      <div class="flex items-center gap-4">
+        <a href="/login" class="flex items-center gap-1 text-sm font-medium text-gray-800 hover:text-blue-500">
+          Iniciar sesión / <span class="font-semibold">Registrarse</span>
+        </a>
+
+        <button class="inline-flex items-center gap-1 px-4 py-1.5 text-sm text-white border border-gray-300 rounded bg-orange-400 hover:bg-orange-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1.5m0 15V21m9-9h-1.5M3 12H1.5m16.95-6.45L17.1 7.1m-10.2 10.2-1.35 1.35m12.75 0-1.35-1.35M6.9 6.9 5.55 5.55" />
+          </svg>
+          Incluye tu negocio
+        </button>
+
+      </div>
+    </nav>
+  </header>
+</StickyNavbar>
