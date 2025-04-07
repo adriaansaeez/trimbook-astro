@@ -28,7 +28,6 @@ export default function StickyNavbar({ children }) {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <img src="/images/trimbook-logo-light-removebg.png" alt="TrimBook Logo" className="h-10" />
-            <span className="ml-2 font-semibold text-lg text-blue-600">TrimBook</span>
           </a>
 
           {/* Desktop menu */}
